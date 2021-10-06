@@ -5,6 +5,8 @@ import os
 import datetime
 import argparse
 MYSTYLE = ""
+real_path = os.path.dirname(os.path.realpath(__file__))
+print(real_path)
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("csv_path", help="full path to the csv file.")
@@ -19,7 +21,7 @@ def main():
     if not args.output_path.lower().endswith("pdf"):
         print("Invalid output file. Ensure the file is pdf format.")
         return 1
-    with open('mystyle.css', 'r') as f:
+    with open(os.path.join(real_path, 'mystyle.css'), 'r') as f:
         MYSTYLE = f.read()
     
     current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
