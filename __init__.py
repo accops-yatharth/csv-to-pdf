@@ -1,1 +1,1 @@
-from main import main
+from csv_to_pdf import main
