@@ -2,7 +2,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 requirements = [
-    'pandas','htmlmin','pdfkit'
+    'prettytable','htmlmin','pdfkit'
 ]
 print(requirements)
 setuptools.setup(
