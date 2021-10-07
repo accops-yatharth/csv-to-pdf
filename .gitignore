@@ -1,2 +1,3 @@
 env/
 output.pdf
+__pycache__
