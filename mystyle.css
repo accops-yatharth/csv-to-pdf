@@ -8,6 +8,7 @@
 
 .mystyle td, th {
     padding: 5px;
+    border: 1px solid rgb(107, 106, 106);;
 }
 
 .mystyle tr:nth-child(even) {
@@ -20,4 +21,5 @@
 }
 tr {
     page-break-inside:avoid;
+    text-align: center;
 }
