@@ -31,10 +31,16 @@ def main():
         reader = csv.reader(f)
         for row in reader:
             data.append(row)
-
-    header = data[0]
-    cols = len(header)
-    df = prettytable.PrettyTable(header)
+    unique_headers = {}
+    headers = data[0]
+    for i, h in enumerate(headers):
+        if h not in unique_headers:
+            unique_headers[h] = 1
+            continue
+        headers[i] = headers[i] + str(unique_headers[h])
+        unique_headers[h] += 1
+    cols = len(headers)
+    df = prettytable.PrettyTable(headers)
     for i, row in enumerate(data):
         if i == 0: continue
         df.add_row(row)        
