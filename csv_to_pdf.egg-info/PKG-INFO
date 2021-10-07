@@ -6,11 +6,9 @@ Home-page: https://github.com/accops-yatharth/csv-to-pdf
 Author: Yatharth Mathur
 Author-email: yatharth.mathur@gmail.com
 License: UNKNOWN
+Description: Python package to convert CSV file into formatted PDFs.
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
-
-Python package to convert CSV file into formatted PDFs.
-
